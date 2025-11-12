@@ -38,9 +38,17 @@ body {
 
 /* ===== GRADIENT ANIMATIONS ===== */
 .bg-gradient-animate {
-  background: linear-gradient(-45deg, #0a0a0a, #1a1a1a, #0a0a0a, #1a1a1a);
+  background: linear-gradient(
+    -45deg,
+    #000000,
+    /* hitam pekat */ #0a0a0a,
+    /* abu sangat gelap */ #202020,
+    /* abu doff — sedikit lebih terang dari sebelumnya */ #111111
+      /* transisi lembut */
+  );
   background-size: 400% 400%;
-  animation: gradient-shift 8s ease infinite;
+  animation: gradient-shift 14s ease-in-out infinite;
+  filter: brightness(0.9) contrast(1.05) saturate(0.85);
 }
 
 .bg-gradient-primary {

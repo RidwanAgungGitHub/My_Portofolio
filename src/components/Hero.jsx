@@ -8,12 +8,16 @@ const Hero = ({ scrollToSection }) => {
   };
 
   return (
-    <section id="beranda" className="min-h-screen bg-gradient-to-br from-base-100 via-base-200 to-base-100 relative overflow-hidden flex items-center justify-center pt-16">
-      {/* Animated Gradient Background - Hitam & Abu bergantian */}
-      <div className="absolute inset-0 bg-gradient-animate opacity-90"></div>
+  <section
+  id="proyek"
+  className="py-32 px-4 bg-gradient-to-br from-[#1a1a1a] via-[#202020] to-[#272727] relative overflow-hidden"
+>
+  <div className="absolute inset-0 bg-[url('/patterns/noise.png')] opacity-10 mix-blend-overlay"></div>
+ {/* Animated Gradient Background - Hitam & Abu bergantian */}
+       <div className="absolute inset-0 bg-gradient-animate opacity-80"></div>
       
       {/* Enhanced Background Pattern */}
-      <div className="absolute inset-0 bg-dots-pattern opacity-[0.015]"></div>
+       <div className="absolute inset-0 bg-dots-pattern opacity-[0.02]"></div>
       
       {/* Premium Floating Elements - Warna tema */}
       <div className="absolute top-20 left-10 opacity-20 animate-float">
